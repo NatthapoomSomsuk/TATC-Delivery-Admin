@@ -8,7 +8,7 @@ if (isset($_POST['login'])) {
     if ($emp_data) {
         if($emp_data['statuslevel_id'] == 99){
             $_SESSION['emp'] = $user_data['emp_id'];
-            header("Location:?page=home" . $user_data['emp_id']);
+            header("Location:?page=home");
         }else{
             ?>
         <script>
